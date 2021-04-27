@@ -23,10 +23,11 @@ header {
     z-index: 1000;
     transition: 0.6s;
 }
+
 header.sticky {
     padding: 5px 100px;
     background: #fff;
-    border-bottom: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
 header .logo {
@@ -61,7 +62,13 @@ header ul li a {
     font-weight: 300;
     transition: 0.6s;
 }
-.banner{
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+.banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -70,4 +77,11 @@ header ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.banner h2 {
+    color: #fff;
+    font-size: 90px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1em;
 }
