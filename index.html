@@ -20,9 +20,22 @@
 </header>
 <!--Banner-->
 <section class="banner" id="home">
-    <h2>We Make <span>Brands</span> Matter</h2>
+    <h2>We Make <br><span>Brands</span> Matter</h2>
 </section>
 <!--About-->
+<section class="sec" id="about">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Who We Are</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Distinctio eos facere illo magnam maiores neque
+                nesciunt optio placeat porro quae quaerat quia
+                recusandae repellendus, sit tempora totam vel
+                veritatis vitae?</p>
+            <a href="#" class="btn">Read Our Story</a>
+        </div>
+    </div>
+</section>
 <!--Services-->
 <!--Stats-->
 <!--Portfolio-->
@@ -30,7 +43,7 @@
 <!--Contact-->
 <script type="text/javascript">
     window.addEventListener('scroll', () => {
-        const header = document.querySelector('header');
+        const header = document.getElementById('header');
         header.classList.toggle('sticky', window.scrollY > 0);
     })
 </script>

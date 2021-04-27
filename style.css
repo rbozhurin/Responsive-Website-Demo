@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
 * {
     margin: 0;
@@ -84,4 +84,20 @@ header.sticky ul li a {
     text-transform: uppercase;
     text-align: center;
     line-height: 1em;
+}
+.banner h2 span {
+    color: #4978ff;
+}
+.sec{
+    background: #fff;
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec .content{
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
