@@ -12,13 +12,14 @@
 <header id="header">
     <a href="#" class="logo">Logo</a>
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#home" onclick="toggle()">Home</a></li>
+        <li><a href="#about" onclick="toggle()">About</a></li>
+        <li><a href="#services" onclick="toggle()">Services</a></li>
+        <li><a href="#portfolio" onclick="toggle()">Portfolio</a></li>
+        <li><a href="#team" onclick="toggle()">Team</a></li>
+        <li><a href="#contact" onclick="toggle()">Contact</a></li>
     </ul>
+    <div class="toggle" onclick="toggle()"></div>
 </header>
 <!--Banner-->
 <section class="banner" id="home">
@@ -213,7 +214,7 @@
             <form>
                 <div class="row100">
                     <div class="inputBox50">
-                        <input type="text" placeholder="full Name">
+                        <input type="text" placeholder="Full Name">
                     </div>
                     <div class="inputBox50">
                         <input type="email" placeholder="Email Address">
@@ -243,9 +244,13 @@
 </section>
 <script type="text/javascript">
     window.addEventListener('scroll', () => {
-        const header = document.getElementById('header');
+        const header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
-    });
+    })
+    function toggle(){
+        const header = document.querySelector('header');
+        header.classList.toggle('active');
+    }
 </script>
 </body>
 </html>
