@@ -518,13 +518,16 @@ p {
         width: 100%;
         margin: 0;
     }
-    .sci{
+
+    .sci {
         margin: 20px;
     }
-    .sci ul li a img{
+
+    .sci ul li a img {
         font-size: 24px;
     }
-    h3{
+
+    h3 {
         font-size: 36px;
     }
 }
