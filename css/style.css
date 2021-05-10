@@ -76,7 +76,7 @@ header.sticky ul li a {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(Assets/bg.jpg);
+    background: url(../Assets/bg.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
