@@ -207,13 +207,13 @@ p {
 
 .workBox .brand {
     position: relative;
-
     min-height: 300px;
     width: 250px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .workBox .brand:nth-child(1) {
@@ -221,37 +221,22 @@ p {
 
 }
 
-.workBox .brand:nth-child(1):hover {
-    background: #000;
-}
-
-
 .workBox .brand:nth-child(2) {
     background: url("../Assets/montshire-home-featured-home.jpg");
 }
 
-.workBox .brand:nth-child(2):hover {
-    background: #000;
-}
 
 .workBox .brand:nth-child(3) {
     background: url("../Assets/nash_home_645.jpg");
 }
 
-.workBox .brand:nth-child(3):hover {
-    background: #000;
-}
 
 .workBox .brand:nth-child(4) {
     background: url("../Assets/Palme-desktop.jpg");
 }
 
-.workBox .brand:nth-child(4):hover {
-    background: #000;
-}
-
 .workBox .brand a {
-    display: none;
+    opacity: 0;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
@@ -259,8 +244,13 @@ p {
     letter-spacing: 2px;
 }
 
+.workBox .brand:hover {
+    background: #000;
+}
+
 .workBox .brand:hover a {
-    display: block;
+    opacity: 1;
+    transition: 0.2s;
     color: rgba(255, 255, 255, 1);
 }
 
