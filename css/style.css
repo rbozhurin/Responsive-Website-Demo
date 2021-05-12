@@ -34,15 +34,14 @@ header.sticky {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
-header .logo {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
+.logo-image img {
+
+}
+
+header .logo img {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
 }
 
 header ul {
@@ -67,7 +66,6 @@ header ul li a {
     transition: 0.6s;
 }
 
-header.sticky .logo,
 header.sticky ul li a {
     color: #000;
 }
