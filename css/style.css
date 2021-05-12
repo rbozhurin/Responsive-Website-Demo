@@ -35,9 +35,8 @@ header.sticky {
 }
 
 header .logo img {
-    width: 46px;
     height: 46px;
-    border-radius: 100%;
+    position: relative;
 }
 
 header ul {
@@ -62,13 +61,14 @@ header ul li a {
 
 header.sticky ul li a {
     color: #000;
+
 }
 
 .banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url(../Assets/bg.jpg);
+    background: url("../Assets/bg.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -208,7 +208,7 @@ p {
 
 .workBox .brand {
     position: relative;
-    background: #4978ff;
+    background: #000;
     min-height: 300px;
     width: 250px;
     margin: 0 auto;
@@ -218,7 +218,20 @@ p {
 }
 
 .workBox .brand:hover {
-    background: #000;
+    background: url("../Assets/ControlledAirFeature_572_525.jpg");
+}
+
+
+.brand:nth-child(2):hover {
+    background: url("../Assets/montshire-home-featured-home.jpg");
+}
+
+.brand:nth-child(3):hover {
+    background: url("../Assets/nash_home_645.jpg");
+}
+
+.brand:nth-child(4):hover {
+    background: url("../Assets/Palme-desktop.jpg");
 }
 
 .workBox .brand a {
