@@ -144,7 +144,6 @@ p {
     margin: 0 auto;
     background: #fff;
     padding: 20px;
-
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
 }
 
@@ -208,7 +207,7 @@ p {
 
 .workBox .brand {
     position: relative;
-    background: #000;
+
     min-height: 300px;
     width: 250px;
     margin: 0 auto;
@@ -217,24 +216,42 @@ p {
     align-items: center;
 }
 
-.workBox .brand:nth-child(1):hover {
+.workBox .brand:nth-child(1) {
     background: url("../Assets/ControlledAirFeature_572_525.jpg");
+
+}
+
+.workBox .brand:nth-child(1):hover {
+    background: #000;
 }
 
 
-.workBox .brand:nth-child(2):hover {
+.workBox .brand:nth-child(2) {
     background: url("../Assets/montshire-home-featured-home.jpg");
 }
 
-.workBox .brand:nth-child(3):hover {
+.workBox .brand:nth-child(2):hover {
+    background: #000;
+}
+
+.workBox .brand:nth-child(3) {
     background: url("../Assets/nash_home_645.jpg");
 }
 
-.workBox .brand:nth-child(4):hover {
+.workBox .brand:nth-child(3):hover {
+    background: #000;
+}
+
+.workBox .brand:nth-child(4) {
     background: url("../Assets/Palme-desktop.jpg");
 }
 
+.workBox .brand:nth-child(4):hover {
+    background: #000;
+}
+
 .workBox .brand a {
+    display: none;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.4);
     text-transform: uppercase;
@@ -243,6 +260,7 @@ p {
 }
 
 .workBox .brand:hover a {
+    display: block;
     color: rgba(255, 255, 255, 1);
 }
 
