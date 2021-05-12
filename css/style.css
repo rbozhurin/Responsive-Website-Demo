@@ -217,20 +217,20 @@ p {
     align-items: center;
 }
 
-.workBox .brand:hover {
+.workBox .brand:nth-child(1):hover {
     background: url("../Assets/ControlledAirFeature_572_525.jpg");
 }
 
 
-.brand:nth-child(2):hover {
+.workBox .brand:nth-child(2):hover {
     background: url("../Assets/montshire-home-featured-home.jpg");
 }
 
-.brand:nth-child(3):hover {
+.workBox .brand:nth-child(3):hover {
     background: url("../Assets/nash_home_645.jpg");
 }
 
-.brand:nth-child(4):hover {
+.workBox .brand:nth-child(4):hover {
     background: url("../Assets/Palme-desktop.jpg");
 }
 
