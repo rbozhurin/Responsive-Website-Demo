@@ -61,14 +61,13 @@ header ul li a {
 
 header.sticky ul li a {
     color: #000;
-
 }
 
 .banner {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    background: url("../Assets/bg.jpg");
+    background: url("../аssets/bg.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -217,22 +216,22 @@ p {
 }
 
 .workBox .brand:nth-child(1) {
-    background: url("../Assets/ControlledAirFeature_572_525.jpg");
+    background: url("../аssets/ControlledAirFeature_572_525.jpg");
 
 }
 
 .workBox .brand:nth-child(2) {
-    background: url("../Assets/montshire-home-featured-home.jpg");
+    background: url("../аssets/montshire-home-featured-home.jpg");
 }
 
 
 .workBox .brand:nth-child(3) {
-    background: url("../Assets/nash_home_645.jpg");
+    background: url("../аssets/nash_home_645.jpg");
 }
 
 
 .workBox .brand:nth-child(4) {
-    background: url("../Assets/Palme-desktop.jpg");
+    background: url("../аssets/Palme-desktop.jpg");
 }
 
 .workBox .brand a {
