@@ -106,6 +106,10 @@ header.sticky ul li a {
     margin: 0 auto;
 }
 
+.extra {
+    display: none;
+}
+
 h3 {
     font-size: 40px;
     font-weight: 200;
@@ -127,6 +131,9 @@ p {
     background: #000;
     text-decoration: none;
     color: #fff;
+}
+.btn:hover{
+    cursor: pointer;
 }
 
 .services {
