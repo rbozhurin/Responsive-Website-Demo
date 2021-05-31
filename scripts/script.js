@@ -19,7 +19,8 @@ function readMore() {
 
 //After Sending a Message in Contact Form
 document.getElementById('sent')
-    .addEventListener('click', () => {
+    .addEventListener('click', (ev) => {
+        ev.preventDefault();
         let contactForm = document.querySelector('.contactForm');
         let thanksMessage = document.querySelector('.hidden');
 
