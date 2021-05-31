@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Popins', sans-serif;
+    font-family: Poppins, sans-serif;
 }
 
 html {
@@ -398,6 +398,11 @@ p {
     font-weight: 500;
 }
 
+.hidden{
+    display: none;
+    color: white;
+    padding: 100px;
+}
 .sci {
     position: relative;
     display: flex;
