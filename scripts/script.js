@@ -28,35 +28,51 @@ document.getElementById('sent')
         thanksMessage.style.display = 'block';
     })
 
-// // Get the modal
-// let modal = document.getElementById('myModal');
-
-// // Get the image and insert it inside the modal - use its "alt" text as a caption
-// let images = document.getElementsByClassName('imgBox');
-// let modalImg = document.getElementById('img01');
-// let captionText = document.getElementById('caption');
-
-// // Go through all of the images with our custom class
-// for (let i = 0; i < images.length; i++) {
-//     let img = images[i];
-//     // and attach our click listener for this image.
-//     img.addEventListener('click', () => {
-//         modal.style.display = "block";
-//         modalImg.src = this.src;
-//         captionText.innerHTML = this.alt;
-//     }
-//     )
-// }
-
+//Popup Images
 function onClick(element) {
     document.getElementById("img01").src = element.src;
     document.getElementById("modal01").style.display = "block";
-  }
-
-// Get the <span> element that closes the modal
-let span = document.getElementsByClassName('close')[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-    modal.style.display = 'none';
 }
+
+//Counter
+$(function () {
+    function isScrolledIntoView($elem) {
+        let docViewTop = $(window).scrollTop();
+        let docViewBottom = docViewTop + $(window).height();
+        let elemTop = $elem.offset().top;
+        let elemBottom = elemTop + $elem.height();
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+
+    function count($this) {
+        let current = parseInt($this.html(), 10);
+        if (isScrolledIntoView($this) && !$this.data("isCounting") && current < $this.data('count')) {
+            $this.html(++current);
+            $this.data("isCounting", true);
+            setTimeout(function () {
+                $this.data("isCounting", false);
+                count($this);
+            }, 5);
+        }
+    }
+
+    $('.counter-value').each(function () {
+        $(this).data('count', parseInt($(this).html(), 10));
+        $(this).html('0');
+        $(this).data("isCounting", false);
+    });
+
+    function startCount() {
+        $('.counter-value').each(function () {
+            count($(this));
+        });
+    };
+
+    $(window).scroll(function () {
+        startCount();
+    });
+
+    startCount();
+});
+
+
