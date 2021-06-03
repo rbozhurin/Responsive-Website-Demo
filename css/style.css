@@ -213,6 +213,7 @@ p {
 
 .workBox .brand {
     position: relative;
+    background: #000;
     min-height: 300px;
     width: 250px;
     margin: 0 auto;
@@ -222,43 +223,96 @@ p {
 
 }
 
-.workBox .brand:nth-child(1) {
-    background: url("../аssets/ControlledAirFeature_572_525.jpg");
-
-}
-
-.workBox .brand:nth-child(2) {
-    background: url("../аssets/montshire-home-featured-home.jpg");
-}
-
-
-.workBox .brand:nth-child(3) {
-    background: url("../аssets/nash_home_645.jpg");
-}
-
-
-.workBox .brand:nth-child(4) {
-    background: url("../аssets/Palme-desktop.jpg");
-}
-
-.workBox .brand a {
-    opacity: 0;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.4);
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 2px;
-}
-
-.workBox .brand:hover {
+.workBox .brand .imgBox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #000;
+    transition: 0.2s;
+    opacity: 0.1;
 }
 
-.workBox .brand:hover a {
-    opacity: 1;
-    transition: 0.2s;
-    color: rgba(255, 255, 255, 1);
+.workBox .brand .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
 }
+
+.workBox .brand:hover .imgBox {
+    opacity: 0.9;
+    transition: 0.2s;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+}
+
+.workBox .brand h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.workBox .brand h2:hover{
+    opacity: 0;
+}
+
+  /* The Modal (background) */
+  .modal {
+    z-index:1;
+    display:none;
+    padding-top:10px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.8)
+    }
+    
+    .modal-content{
+    margin: auto;
+    display: block;
+        position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .close {
+    text-decoration:none;
+    float:right;
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+    }
+    
+    .modal-content, #caption {   
+      
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    
+    @-webkit-keyframes zoom {
+        from {-webkit-transform:scale(0)} 
+        to {-webkit-transform:scale(1)}
+    }
+    
+    @keyframes zoom {
+        from {transform:scale(0)} 
+        to {transform:scale(2)}
+    }
 
 .teamBox {
     position: relative;
@@ -312,7 +366,7 @@ p {
 }
 
 .teamBox .member:hover .details {
-    opacity: 1;
+    opacity: 0.9;
 }
 
 .teamBox .member .details h2 {
