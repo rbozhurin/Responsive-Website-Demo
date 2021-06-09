@@ -1,6 +1,6 @@
 document.getElementById('sent')
-    .addEventListener('click', (ev) => {
-        ev.preventDefault();
+    .addEventListener('click', () => {
+        
         let contactForm = document.querySelector('.contactForm');
         let thanksMessage = document.querySelector('.hidden');
 
